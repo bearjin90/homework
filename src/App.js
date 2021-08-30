@@ -3,6 +3,7 @@ import './styles/scss/app.scss';
 import Header from './components/Header';
 import VisualSlider from './components/VisualSlider';
 import MainTab from './components/MainTab';
+import SubTab from './components/SubTab';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <VisualSlider />
       <MainTab />
+      <SubTab category={'ranking'} />
     </main>
   );
 }
