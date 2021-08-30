@@ -22,6 +22,10 @@ module.exports = {
         },
       },
       {
+        test: /\.s[ac]ss$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
+      {
         test: /\.(ico|png|jpg|svg)$/,
         loader: 'url-loader',
         options: {
@@ -29,10 +33,6 @@ module.exports = {
           limit: 10000,
         },
       },
-      {
-        test: /\.s[ac]ss$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-      }
     ],
   },
   plugins: [
