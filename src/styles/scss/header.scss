@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+
+  &__left {
+    position: absolute;
+    left: 16px;
+  }
+
+  &__right {
+    position: absolute;
+    right: 16px;
+  }
+
+  &__btn {
+    position: relative;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+
+    &--bell-active::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #0078ff;
+    }
+
+    &+& {
+      margin-left: 20px;
+    }
+  }
+
+  &__bag-cnt {
+    display: none;
+    position: absolute;
+    right: -7px;
+    bottom: -5px;
+    padding: 3px 5px;
+    background-color: #0078ff;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 11px;
+    color: #fff;
+    line-height: 1;
+
+    .header__btn--bag-active & {
+      display: block;
+    }
+  }
+
+  &__logo {
+    &-link {
+      display: block;
+      font-size: 18px;
+      color: #000;
+      letter-spacing: .1rem;
+    }
+  }
+}

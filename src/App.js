@@ -1,9 +1,12 @@
 import React from 'react';
-import './styles/scss/App.scss';
+import './styles/scss/app.scss';
+import Header from './components/Header';
 
 const App = () => {
   return (
-    <div className="container">무신사 UI개발 과제</div>
+    <main id="main" className="main">
+      <Header />
+    </main>
   );
 }
 
