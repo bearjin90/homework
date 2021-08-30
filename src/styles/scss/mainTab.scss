@@ -1,29 +1,21 @@
 .main-tab {
-  padding: 30px 15px 25px;
-
-  &__list {
-    background-color: #f5f5f5;
-    display: flex;
-    border-radius: 6px;
-  }
-
-  &__item {
-    flex: 1;
-  }
+  display: flex;
+  margin: 30px 15px 25px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
 
   &__btn {
-    display: block;
-    width: 100%;
+    flex: 1;
     height: 40px;
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: 4px;
     font-weight: 500;
     font-size: 13px;
     color: #aaa;
-    line-height: 40px;
+    line-height: 38px;
     text-align: center;
 
-    .main-tab__item--active & {
+    &--active {
       background-color: #fff;
       border-color: #eee;
       color: #000;
