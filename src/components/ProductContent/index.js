@@ -1,12 +1,14 @@
 import React from 'react';
 import MainTab from '../MainTab';
-import RankingContent from '../ranking/RankingContent';
+// import RankingContent from '../ranking/RankingContent';
+import CoordiContent from '../coordi/CoordiContent';
 
 const ProductContent = () => {
   return (
     <div className="product-content">
       <MainTab />
-      <RankingContent />
+      {/* <RankingContent /> */}
+      <CoordiContent />
     </div>
   );
 };
