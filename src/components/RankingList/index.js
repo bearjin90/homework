@@ -11,14 +11,13 @@ function plusCommasPrice(price) {
 
 const RankingList = ({ start, end }) => {
   const _listData = rankingListData.slice(start, end);
-  const _type = end - start;
 
   return (
-    <ul className="ranking-list" data-type={_type}>
+    <ul className="ranking-list">
       {
         _listData.map((elm) => {
           return (
-            <li key={`${elm.brand}_${elm.name}_${elm.ranking}`} className="ranking-list__item">
+            <li key={`${elm.brand}_${elm.name}_${elm.ranking}`} className="ranking-list__item" data-ranking={elm.ranking}>
               <div className="ranking-list__img">
                 <img src={require(`../../assets/images/goods/${elm.img}`).default} alt={`${elm.brand}_${elm.name}`} />
                 <span className="ranking-list__ranking">{elm.ranking}</span>

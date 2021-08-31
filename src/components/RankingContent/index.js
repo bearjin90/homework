@@ -12,6 +12,8 @@ const RankingContent = () => {
       <RankingList start={0} end={5} />
       <SubVisualSlider category={'ranking'} />
       <RankingList start={5} end={14} />
+      <SubVisualSlider category={'ranking'} />
+      <RankingList start={2} end={14} />
     </section>
   );
 };
