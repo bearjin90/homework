@@ -1,7 +1,7 @@
 import React from 'react';
-import bellIcon from '../../assets/images/bell.png';
-import heartIcon from '../../assets/images/heart.png';
-import bagIcon from '../../assets/images/shopping_bag.png';
+import bellIcon from '../../../assets/images/bell.png';
+import heartIcon from '../../../assets/images/heart.png';
+import bagIcon from '../../../assets/images/shopping_bag.png';
 
 const Header = () => {
   return (
