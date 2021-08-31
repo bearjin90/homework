@@ -1,6 +1,6 @@
 import React from 'react';
 import MainTab from '../MainTab';
-import RankingContent from '../RankingContent';
+import RankingContent from '../Ranking/RankingContent';
 
 const ProductContent = () => {
   return (
