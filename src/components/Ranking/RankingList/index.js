@@ -1,13 +1,6 @@
 import React from 'react';
 import rankingListData from '../../../_data/rankingListData';
-
-/**
- * 가격 쉼표 추가
- * @param {string} price 가격
- */
-function plusCommasPrice(price) {
-  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
+import { plusCommasPrice } from '../../../utils/plusCommasPrice';
 
 const RankingList = ({ start, end }) => {
   const _listData = rankingListData.slice(start, end);
