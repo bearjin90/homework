@@ -1,14 +1,12 @@
 import React from 'react';
 import MainTab from '../MainTab';
-import SubTab from '../SubTab';
-import SubVisualSlider from '../SubVisualSlider';
+import RankingContent from '../RankingContent';
 
 const ProductContent = () => {
   return (
     <div className="product-content">
       <MainTab />
-      <SubTab category={'ranking'} />
-      <SubVisualSlider category={'ranking'} />
+      <RankingContent />
     </div>
   );
 };
