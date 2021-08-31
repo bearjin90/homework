@@ -1,0 +1,32 @@
+.button-wrap {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.link-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #777;
+  line-height: 21px;
+
+  &--arrow {
+    padding: 10px 35px 10px 20px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 8px;
+      height: 8px;
+      border-width: 1px 1px 0 0;
+      border-style: solid;
+      border-color: #777;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}
