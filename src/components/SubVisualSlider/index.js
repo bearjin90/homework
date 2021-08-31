@@ -27,6 +27,12 @@ const SubVisualSlider = ({ category }) => {
                     <p className="sub-visual-slider__comment-cnt">{elm.comment.cnt}개 댓글</p>
                   </div>
                 }
+                {elm.date &&
+                  <div className="sub-visual-slider__date">
+                    <p className="sub-visual-slider__date-start">{elm.date.start}</p>
+                    <p className="sub-visual-slider__date-end">- {elm.date.end}</p>
+                  </div>
+                }
               </div>
             </SwiperSlide>
           );

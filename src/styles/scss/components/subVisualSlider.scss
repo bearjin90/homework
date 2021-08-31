@@ -32,6 +32,7 @@
 
   &__comment {
     display: flex;
+    margin-top: 3px;
     font-size: 12px;
     line-height: 18px;
     color: #777;
@@ -51,6 +52,18 @@
         background-color: #777;
         border-radius: 50%;
       }
+    }
+  }
+
+  &__date {
+    display: flex;
+    margin-top: 3px;
+    font-size: 12px;
+    color: #777;
+    line-height: 18px;
+
+    &-end {
+      margin-left: 6px;
     }
   }
 
