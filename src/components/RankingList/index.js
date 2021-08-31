@@ -27,8 +27,8 @@ const RankingList = ({ start, end }) => {
                 <div className="ranking-list__price-wrap">
                   <p className="ranking-list__price">{plusCommasPrice(elm.price)}원</p>
                   <div className="ranking-list__benefit">
-                    {elm.discount > 0 && <p className="ranking-list__discount">{elm.discount}%</p>}
-                    {elm.coupon === 'Y' && <p className="ranking-list__coupon">쿠폰</p>}
+                    {elm.discount && <p className="ranking-list__discount">{elm.discount}%</p>}
+                    {elm.coupon && <p className="ranking-list__coupon">쿠폰</p>}
                   </div>
                 </div>
               </div>
