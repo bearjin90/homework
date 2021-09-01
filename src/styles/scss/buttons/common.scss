@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.link-btn {
+.default-btn {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -27,6 +27,17 @@
       border-style: solid;
       border-color: #777;
       transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &--refresh {
+    padding: 10px 20px 10px 43px;
+
+    .default-btn__icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
