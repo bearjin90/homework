@@ -12,9 +12,9 @@ const RankingContent = () => {
       <RankingTitle />
       <SubTab category={'ranking'} />
       <RankingList start={0} end={5} />
-      <SubVisualSlider category={'ranking1'} />
+      <SubVisualSlider category={'ranking'} />
       <RankingList start={5} end={14} />
-      <SubVisualSlider category={'ranking2'} />
+      <SubVisualSlider category={'ranking'} />
       <RankingList start={2} end={14} />
       <ButtonWrap>
         <ArrowLinkButton link={'/'} text={'상품 전체 보기'} />
