@@ -7,7 +7,10 @@ const SubTab = ({ category }) => {
     const targetParent = e.target.parentNode;
     targetParent.querySelector('.sub-tab__btn--active').classList.remove('sub-tab__btn--active');
     target.classList.add('sub-tab__btn--active');
-    target.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+    targetParent.scrollTo({
+      left: (target.offsetLeft - 15),
+      behavior: "smooth"
+    });
   }, []);
 
   return (
@@ -15,11 +18,11 @@ const SubTab = ({ category }) => {
       {
         subTabData[category].map((elm, idx) => {
           return (
-            <button key={elm + idx} type="button" className={`sub-tab__btn ${idx === 0 ? "sub-tab__btn--active" : ''}`} onClick={onClickTab}>{elm}</button>
+            <button key={elm + idx} type="button" data-id={idx} className={`sub-tab__btn ${idx === 0 ? "sub-tab__btn--active" : ''}`} onClick={onClickTab}>{elm}</button>
           );
         })
       }
-    </div >
+    </div>
   );
 };
 
