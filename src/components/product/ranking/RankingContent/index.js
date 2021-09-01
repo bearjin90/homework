@@ -1,10 +1,10 @@
 import React from 'react';
-import SubTab from '../../SubTab';
-import SubVisualSlider from '../../SubVisualSlider';
+import SubTab from '../../../SubTab';
+import SubVisualSlider from '../../../SubVisualSlider';
+import ButtonWrap from '../../../buttons/ButtonWrap';
+import ArrowLinkButton from '../../../buttons/ArrowLinkButton';
 import RankingTitle from '../RankingTitle';
 import RankingList from '../RankingList';
-import ButtonWrap from '../../buttons/ButtonWrap';
-import ArrowLinkButton from '../../buttons/ArrowLinkButton';
 
 const RankingContent = () => {
   return (

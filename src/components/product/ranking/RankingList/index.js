@@ -1,6 +1,6 @@
 import React from 'react';
-import rankingListData from '../../../_data/rankingListData';
-import { plusCommasPrice } from '../../../utils/plusCommasPrice';
+import rankingListData from '../../../../_data/rankingListData';
+import { plusCommasPrice } from '../../../../utils/plusCommasPrice';
 
 const RankingList = ({ start, end }) => {
   const _listData = rankingListData.slice(start, end);
@@ -12,7 +12,7 @@ const RankingList = ({ start, end }) => {
           return (
             <li key={`${elm.brand}_${elm.name}_${elm.ranking}`} className="ranking-list__item" data-ranking={elm.ranking}>
               <div className="ranking-list__img">
-                <img src={require(`../../../assets/images/goods/${elm.img}`).default} alt={`${elm.brand}_${elm.name}`} />
+                <img src={require(`../../../../assets/images/goods/${elm.img}`).default} alt={`${elm.brand}_${elm.name}`} />
                 <span className="ranking-list__ranking">{elm.ranking}</span>
               </div>
               <div className="ranking-list__info">

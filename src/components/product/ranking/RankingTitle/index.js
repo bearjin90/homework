@@ -10,7 +10,7 @@ const RankingTitle = () => {
       <div className="ranking-title__right">
         <button type="button" className="ranking-title__all-age-btn">
           전체 연령대
-          <img src={require('../../../assets/images/ico/ico_menu.png').default} className="ranking-title__menu-icon" />
+          <img src={require('../../../../assets/images/ico/ico_menu.png').default} className="ranking-title__menu-icon" />
         </button>
       </div>
     </div>

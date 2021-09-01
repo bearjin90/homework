@@ -1,9 +1,9 @@
 import React from 'react';
-import SubTab from '../../SubTab';
+import SubTab from '../../../SubTab';
+import SubVisualSlider from '../../../SubVisualSlider';
+import ButtonWrap from '../../../buttons/ButtonWrap';
+import ArrowLinkButton from '../../../buttons/ArrowLinkButton';
 import CoordiThumbList from '../CoordiThumbList';
-import ButtonWrap from '../../buttons/ButtonWrap';
-import ArrowLinkButton from '../../buttons/ArrowLinkButton';
-import SubVisualSlider from '../../SubVisualSlider';
 import CoordiStyleList from '../CoordiStyleList';
 
 const CoordiContent = () => {

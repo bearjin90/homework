@@ -1,6 +1,6 @@
 import React from 'react';
-import coordiThumbListData from '../../../_data/coordiThumblistData';
-import { plusCommasPrice } from '../../../utils/plusCommasPrice';
+import coordiThumbListData from '../../../../_data/coordiThumblistData';
+import { plusCommasPrice } from '../../../../utils/plusCommasPrice';
 
 const CoordiThumbList = () => {
   return (
@@ -10,11 +10,11 @@ const CoordiThumbList = () => {
           return (
             <li key={elm.brand + idx} className="coordi-thumb-list__item">
               <div className="coordi-thumb-list__thumb coordi-thumb-list__thumb--big">
-                <img src={require(`../../../assets/images/coordi/thumb/b_thumb_${elm.img}`).default} alt={`${elm.brand}_코디_${idx}`} />
+                <img src={require(`../../../../assets/images/coordi/thumb/b_thumb_${elm.img}`).default} alt={`${elm.brand}_코디_${idx}`} />
               </div>
               <div className="coordi-thumb-list__product">
                 <div className="coordi-thumb-list__thumb coordi-thumb-list__thumb--small">
-                  <img src={require(`../../../assets/images/coordi/thumb/s_thumb_${elm.img}`).default} alt={`${elm.brand}_코디제품_${idx}`} />
+                  <img src={require(`../../../../assets/images/coordi/thumb/s_thumb_${elm.img}`).default} alt={`${elm.brand}_코디제품_${idx}`} />
                 </div>
                 <div className="coordi-thumb-list__info">
                   <p className="coordi-thumb-list__brand">{elm.brand}</p>
