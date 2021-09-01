@@ -7,7 +7,7 @@ const UpdateNewsList = () => {
       {
         updateNewsListData.map((elm, idx) => {
           return (
-            <li className="update-news-list__item">
+            <li key={`${elm.img}_${idx}`} className="update-news-list__item">
               <div className="update-news-list__img">
                 <img src={require(`../../../../assets/images/update/news/${elm.img}`).default} alt={`뉴스 이미지_${idx}`} />
               </div>
