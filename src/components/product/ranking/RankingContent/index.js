@@ -8,7 +8,7 @@ import RankingList from '../RankingList';
 
 const RankingContent = () => {
   return (
-    <section className="ranking">
+    <section className="ranking-content">
       <RankingTitle />
       <SubTab category={'ranking'} />
       <RankingList start={0} end={5} />
