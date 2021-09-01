@@ -9,6 +9,8 @@
 @import './components/mainTab.scss';
 @import './components/subTab.scss';
 @import './components/subVisualSlider.scss';
-@import './components/rankingContent.scss';
-@import './components/rankingList.scss';
-@import './components/coordiThumbList.scss';
+
+@import './components/ranking/rankingContent.scss';
+@import './components/ranking/rankingList.scss';
+
+@import './components/coordi/coordiThumbList.scss';
