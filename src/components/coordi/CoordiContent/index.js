@@ -17,6 +17,10 @@ const CoordiContent = () => {
       <SubVisualSlider category={'coordi'} />
       <SubTab category={'coordi2'} />
       <CoordiStyleList category={'sportAndOutdoor'} />
+      <SubVisualSlider category={'coordi'} />
+      <SubTab category={'coordi2'} />
+      <CoordiStyleList category={'formalAndUrban'} />
+      <SubVisualSlider category={'coordi'} />
     </section>
   );
 };
