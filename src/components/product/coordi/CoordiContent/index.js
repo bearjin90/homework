@@ -2,7 +2,7 @@ import React from 'react';
 import SubTab from '../../../SubTab';
 import SubVisualSlider from '../../../SubVisualSlider';
 import ButtonWrap from '../../../buttons/ButtonWrap';
-import ArrowLinkButton from '../../../buttons/ArrowLinkButton';
+import ArrowButton from '../../../buttons/ArrowButton';
 import CoordiThumbList from '../CoordiThumbList';
 import CoordiStyleList from '../CoordiStyleList';
 
@@ -12,7 +12,7 @@ const CoordiContent = () => {
       <SubTab category={'coordi'} />
       <CoordiThumbList />
       <ButtonWrap>
-        <ArrowLinkButton link={'/'} text={'전체 보기'} />
+        <ArrowButton text={'전체 보기'} />
       </ButtonWrap>
       <SubVisualSlider category={'coordi'} />
       <SubTab category={'coordi2'} />
