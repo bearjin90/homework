@@ -7,17 +7,16 @@
 
 @import './buttons/common.scss';
 
-@import './components/productContent.scss';
 @import './components/mainTab.scss';
 @import './components/subTab.scss';
 @import './components/subVisualSlider.scss';
 
-@import './components/ranking/rankingTitle.scss';
-@import './components/ranking/rankingList.scss';
-
-@import './components/coordi/coordiThumbList.scss';
-@import './components/coordi/coordiStyleList.scss';
-
-@import './components/update/updateNewsList.scss';
-@import './components/update/updateTitle.scss';
-@import './components/update/updateProductContent.scss';
+@import './components/product/productContent.scss';
+@import './components/product/productInfo.scss';
+@import './components/product/ranking/rankingTitle.scss';
+@import './components/product/ranking/rankingList.scss';
+@import './components/product/coordi/coordiThumbList.scss';
+@import './components/product/coordi/coordiStyleList.scss';
+@import './components/product/update/updateNewsList.scss';
+@import './components/product/update/updateTitle.scss';
+@import './components/product/update/updateProductContent.scss';

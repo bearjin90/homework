@@ -69,42 +69,4 @@
     font-size: 12px;
     line-height: 18px;
   }
-
-  &__title {
-    margin-bottom: 3px;
-    font-size: 15px;
-    line-height: 22px;
-  }
-
-  &__info {
-    @include small-font-gray;
-  }
-
-  &__comment {
-    position: relative;
-    margin-left: 14px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: -7px;
-      top: 50%;
-      width: 2px;
-      height: 2px;
-      background-color: #777;
-      border-radius: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
-  &__show-case {
-    padding: 2px 7px;
-    margin-left: 6px;
-    border: 1px solid #eee;
-    border-radius: 9px;
-    font-weight: 500;
-    font-size: 10px;
-    color: #000;
-    line-height: 14px;
-  }
 }

@@ -9,10 +9,8 @@ const subVisualData = {
       type: 'left',
       img: 'sub2.jpg',
       title: '신발 좋아요 신발 좋아요 신발 좋아요',
-      comment: {
-        name: '키르시',
-        cnt: '133',
-      },
+      brand: '키르시',
+      comment: 133,
     },
     {
       type: 'right',
@@ -35,10 +33,8 @@ const subVisualData = {
       type: 'left',
       img: 'sub2.jpg',
       title: '신발 좋아요 신발 좋아요 신발 좋아요',
-      comment: {
-        name: '키르시',
-        cnt: '133',
-      },
+      brand: '키르시',
+      comment: 133,
     },
     {
       type: 'left',

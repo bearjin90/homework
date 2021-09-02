@@ -1,7 +1,9 @@
 import React, { useRef, useCallback } from 'react';
 import updateProductContentData from '../../../../_data/updateProductContentData';
+import ProductInfo from '../../ProductInfo';
 
 const UpdateProductContent = ({ category }) => {
+  const title = useRef(updateProductContentData[category].title);
   const time = useRef(updateProductContentData[category].time);
   const comments = useRef(updateProductContentData[category].comments);
   const showCase = useRef(updateProductContentData[category].showCase);
@@ -39,12 +41,7 @@ const UpdateProductContent = ({ category }) => {
         }
       </div>
       <div className="update-product-content__bottom">
-        <p className="update-product-content__title">버켄스탁 인기상품 재입고</p>
-        <div className="update-product-content__info">
-          <span className="update-product-content__date">{time.current}분전</span>
-          {comments.current > 0 && <span className="update-product-content__comment">{comments.current}개 댓글</span>}
-          {showCase.current === 'Y' && <span className="update-product-content__show-case">쇼케이스 진행중</span>}
-        </div>
+        <ProductInfo title={title.current} time={time.current} comment={comments.current} showCase={showCase.current} />
       </div>
     </div>
   );

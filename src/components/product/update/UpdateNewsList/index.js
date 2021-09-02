@@ -1,5 +1,6 @@
 import React from 'react';
 import updateNewsListData from '../../../../_data/updateNewsData';
+import ProductInfo from '../../ProductInfo';
 
 const UpdateNewsList = () => {
   return (
@@ -11,14 +12,7 @@ const UpdateNewsList = () => {
               <div className="update-news-list__img">
                 <img src={require(`../../../../assets/images/update/news/${elm.img}`).default} alt={`뉴스 이미지_${idx}`} />
               </div>
-              <p className="update-news-list__title">{elm.title}</p>
-              <div className="update-news-list__info">
-                <span className="update-news-list__brand">{elm.brand}</span>
-                {
-                  elm.comments > 0 &&
-                  <span className="update-news-list__comment">{elm.comments}개 댓글</span>
-                }
-              </div>
+              <ProductInfo title={elm.title} brand={elm.brand} comment={elm.comments} />
             </li>
           )
         })

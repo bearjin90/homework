@@ -1,0 +1,22 @@
+.update-news-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    @include listItemTwo(25px);
+  }
+
+  &__img {
+    @include fullCoverImgBox(66.6%, 6px);
+    position: relative;
+    margin-bottom: 10px;
+
+    img {
+      @include fullCoverImg;
+    }
+  }
+
+  .product-info__title {
+    @include textOverflow(44px, 2);
+  }
+}
