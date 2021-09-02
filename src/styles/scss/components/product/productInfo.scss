@@ -1,5 +1,6 @@
 .product-info {
   &__title {
+    @include textOverflow(44px, 2);
     font-size: 15px;
     line-height: 22px;
     word-break: keep-all;

@@ -15,8 +15,4 @@
       @include fullCoverImg;
     }
   }
-
-  .product-info__title {
-    @include textOverflow(44px, 2);
-  }
 }

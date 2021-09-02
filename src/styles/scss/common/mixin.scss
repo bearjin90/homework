@@ -13,7 +13,7 @@
 @mixin textOverflow($height, $line) {
   overflow: hidden;
   display: -webkit-box;
-  height: $height;
+  max-height: $height;
   text-overflow: ellipsis;
   -webkit-line-clamp: $line;
   -webkit-box-orient: vertical;

@@ -15,9 +15,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
 
     &__title {
+      @include textOverflow(40px, 2);
       font-weight: 500;
       line-height: 20px;
     }
@@ -38,12 +38,8 @@
 
       .product-info {
         height: 90px;
-        padding-left: 150px;
+        padding: 0 15px 0 150px;
         background-color: #f9f9f9;
-
-        &__title {
-          @include textOverflow(40px, 2);
-        }
       }
     }
 
@@ -54,7 +50,7 @@
 
       .product-info {
         height: 80px;
-        padding-right: 125px;
+        padding: 0 125px 0 15px;
         background-color: #484848;
         border-radius: 6px;
 
