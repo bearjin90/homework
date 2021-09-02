@@ -13,31 +13,29 @@
   color: #777;
   line-height: 21px;
 
+  .icon-svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
   &--arrow {
     padding: 10px 35px 10px 20px;
 
-    &::after {
-      content: '';
-      position: absolute;
+    .icon-svg--arrow {
       right: 20px;
-      top: 50%;
-      width: 8px;
-      height: 8px;
-      border-width: 1px 1px 0 0;
-      border-style: solid;
-      border-color: #777;
-      transform: translateY(-50%) rotate(45deg);
+      width: 7px;
+      height: 13px;
     }
   }
 
   &--refresh {
     padding: 10px 20px 10px 43px;
 
-    .default-btn__icon {
-      position: absolute;
+    .icon-svg--refresh {
       left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
+      width: 18px;
+      height: 19px;
     }
   }
 }

@@ -147,3 +147,12 @@ input[type=text] {
   max-width: 640px;
   margin: 0 auto;
 }
+
+.blind {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

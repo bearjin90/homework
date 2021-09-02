@@ -12,8 +12,8 @@ const CoordiStyleList = ({ category }) => {
           </div>
           {
             elm.play === 'Y' &&
-            <span className="coordi-style-list__play-icon">
-              <img src={require('../../../../assets/images/ico/ico_video_play.png').default} alt="비디오 플레이" />
+            <span className="coordi-style-list__play-icon icon-svg icon-svg--video-play">
+              <span className="blind">비디오 플레이 버튼</span>
             </span>
           }
         </li>
