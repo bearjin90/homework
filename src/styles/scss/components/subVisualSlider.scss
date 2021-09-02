@@ -40,6 +40,10 @@
         height: 90px;
         padding-left: 150px;
         background-color: #f9f9f9;
+
+        &__title {
+          @include textOverflow(40px, 2);
+        }
       }
     }
 
@@ -50,12 +54,17 @@
 
       .product-info {
         height: 80px;
+        padding-right: 125px;
         background-color: #484848;
         border-radius: 6px;
-      }
 
-      .product-info__title {
-        color: #fff;
+        &__title {
+          color: #fff;
+        }
+
+        &__date {
+          color: #fff;
+        }
       }
     }
   }
