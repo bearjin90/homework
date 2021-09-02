@@ -8,7 +8,7 @@ import subVisualData from '../../_data/subVisualData';
 
 const SubVisualSlider = ({ category }) => {
   return (
-    <div className="sub-visual-slider">
+    <div className="sub-visual-slider" role="slider">
       <Swiper
         modules={[Pagination]}
         pagination={{ clickable: true }}

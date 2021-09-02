@@ -7,7 +7,7 @@ import visualData from '../../../_data/visualData';
 
 const VisualSlider = () => {
   return (
-    <div className="visual-slider">
+    <div className="visual-slider" role="slider">
       <Swiper
         modules={[Pagination]}
         pagination={{ clickable: true }}

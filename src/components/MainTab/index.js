@@ -3,11 +3,11 @@ import mainTabData from '../../_data/mainTabData';
 
 const MainTab = ({ activeTab, onChangeTab }) => {
   return (
-    <div id="mainTab" className="main-tab">
+    <div id="mainTab" className="main-tab" role="tablist">
       {
         mainTabData.map((elm, idx) => {
           return (
-            <button key={elm + idx} type="button" className={`main-tab__btn ${activeTab === idx ? 'main-tab__btn--active' : ''}`} onClick={() => { onChangeTab(idx); }}>{elm}</button>
+            <button key={elm + idx} type="button" role="tab" className={`main-tab__btn ${activeTab === idx ? 'main-tab__btn--active' : ''}`} onClick={() => { onChangeTab(idx); }}>{elm}</button>
           );
         })
       }

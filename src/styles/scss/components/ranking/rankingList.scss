@@ -28,14 +28,26 @@
         background-color: #000;
         line-height: 22px;
       }
+
+      .ranking-list__discount {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: inherit;
+      }
     }
 
-    &[data-ranking="2"]+.ranking-list__item {
+    &[data-ranking="3"] {
+      margin-left: 0;
       margin-top: 20px;
+    }
+
+    &[data-ranking="4"] {
+      margin-left: 3px;
     }
   }
 
   &__img {
+    overflow: hidden;
     position: relative;
     height: 0;
     padding-bottom: 120%;

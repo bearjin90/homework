@@ -14,11 +14,11 @@ const SubTab = ({ category }) => {
   }, []);
 
   return (
-    <div id="subTab" className="sub-tab">
+    <div id="subTab" className="sub-tab" role="tablist">
       {
         subTabData[category].map((elm, idx) => {
           return (
-            <button key={elm + idx} type="button" data-id={idx} className={`sub-tab__btn ${idx === 0 ? "sub-tab__btn--active" : ''}`} onClick={onClickTab}>{elm}</button>
+            <button key={elm + idx} type="button" role="tab" data-id={idx} className={`sub-tab__btn ${idx === 0 ? "sub-tab__btn--active" : ''}`} onClick={onClickTab}>{elm}</button>
           );
         })
       }
