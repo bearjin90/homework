@@ -1,8 +1,7 @@
 .visual-slider {
 
   &__category,
-  &__title,
-  &__txt {
+  &__info {
     position: absolute;
     left: 25px;
     color: #fff;
@@ -14,9 +13,13 @@
     line-height: 22px;
   }
 
+  &__info {
+    bottom: 70px;
+  }
+
   &__title {
-    bottom: 100px;
     max-width: 235px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 30px;
     line-height: 39px;
@@ -24,7 +27,6 @@
   }
 
   &__txt {
-    bottom: 70px;
     font-size: 14px;
     line-height: 21px;
   }

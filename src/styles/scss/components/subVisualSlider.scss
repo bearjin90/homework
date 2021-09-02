@@ -1,6 +1,10 @@
 .sub-visual-slider {
   margin: 60px 0;
 
+  &:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+
   &__img {
     position: absolute;
     top: 0;
@@ -15,9 +19,7 @@
   }
 
   &__title {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 21px;
+    @include middle-font;
     color: #000;
     word-break: keep-all;
   }
@@ -33,9 +35,7 @@
   &__comment {
     display: flex;
     margin-top: 3px;
-    font-size: 12px;
-    line-height: 18px;
-    color: #777;
+    @include small-font-gray;
 
     &-cnt {
       position: relative;
@@ -58,9 +58,7 @@
   &__date {
     display: flex;
     margin-top: 3px;
-    font-size: 12px;
-    color: #777;
-    line-height: 18px;
+    @include small-font-gray;
 
     &-end {
       margin-left: 6px;

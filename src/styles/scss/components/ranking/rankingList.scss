@@ -1,6 +1,5 @@
 .ranking-list {
-  display: flex;
-  flex-wrap: wrap;
+  @include flexWrap;
 
   &__item {
     width: calc((100% - 6px) / 3);
@@ -37,8 +36,7 @@
     }
 
     &[data-ranking="3"] {
-      margin-left: 0;
-      margin-top: 20px;
+      margin: 20px 0 0 0;
     }
 
     &[data-ranking="4"] {
@@ -47,18 +45,12 @@
   }
 
   &__img {
-    overflow: hidden;
+    @include fullCoverImgBox(120%, 0);
     position: relative;
-    height: 0;
-    padding-bottom: 120%;
     margin-bottom: 10px;
 
     img {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      transform: translateY(-50%);
+      @include fullWidthImg;
     }
   }
 
@@ -78,28 +70,22 @@
 
   &__brand {
     overflow: hidden;
-    font-size: 12px;
-    color: #777;
-    line-height: 18px;
+    @include small-font-gray;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
   &__price-wrap {
-    display: flex;
+    @include flexAlignCenter;
     justify-content: space-between;
-    align-items: center;
   }
 
   &__price {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
+    @include middle-font;
   }
 
   &__benefit {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
   }
 
   &__discount {

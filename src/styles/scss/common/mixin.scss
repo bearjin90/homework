@@ -1,0 +1,70 @@
+@mixin small-font-gray {
+  font-size: 12px;
+  color: #777;
+  line-height: 18px;
+}
+
+@mixin middle-font {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+@mixin textOverflow($height, $line) {
+  overflow: hidden;
+  display: -webkit-box;
+  height: $height;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin listItemTwo($margin) {
+  width: calc((100% - 3px) / 2);
+  margin-top: $margin;
+
+  &:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+
+  &:nth-child(even) {
+    margin-left: 3px;
+  }
+}
+
+@mixin fullCoverImgBox($padding, $borderRadius) {
+  overflow: hidden;
+  height: 0;
+  padding-bottom: $padding;
+
+  @if $borderRadius !=0 {
+    border-radius: $borderRadius;
+  }
+}
+
+@mixin fullCoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@mixin fullWidthImg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
