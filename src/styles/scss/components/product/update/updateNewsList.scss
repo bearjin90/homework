@@ -7,12 +7,14 @@
   }
 
   &__img {
-    @include fullCoverImgBox(66.6%, 6px);
-    position: relative;
     margin-bottom: 10px;
 
     img {
       @include fullCoverImg;
     }
+  }
+
+  &__link {
+    @include fullCoverImgBox(66.6%, 6px);
   }
 }

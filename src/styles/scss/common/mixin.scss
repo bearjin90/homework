@@ -44,6 +44,8 @@
 
 @mixin fullCoverImgBox($padding, $borderRadius) {
   overflow: hidden;
+  display: block;
+  position: relative;
   height: 0;
   padding-bottom: $padding;
 

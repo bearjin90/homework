@@ -45,13 +45,17 @@
   }
 
   &__img {
-    @include fullCoverImgBox(120%, 0);
-    position: relative;
     margin-bottom: 10px;
 
     img {
       @include fullWidthImg;
     }
+  }
+
+  &__link {
+    @include fullCoverImgBox(120%, 0);
+    display: block;
+    position: relative;
   }
 
   &__ranking {

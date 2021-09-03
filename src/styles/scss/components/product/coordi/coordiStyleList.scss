@@ -16,12 +16,13 @@
   }
 
   &__img {
-    @include fullCoverImgBox(149.7076%, 6px);
-    position: relative;
-
     img {
       @include fullCoverImg;
     }
+  }
+
+  &__link {
+    @include fullCoverImgBox(149.7076%, 6px);
   }
 
   &__play-icon {

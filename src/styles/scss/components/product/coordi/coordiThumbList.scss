@@ -17,7 +17,6 @@
     }
 
     &--big {
-      @include fullCoverImgBox(149.7076%, 6px);
       margin-bottom: 10px;
     }
 
@@ -26,6 +25,10 @@
       width: 45px;
       height: 54px;
     }
+  }
+
+  &__link {
+    @include fullCoverImgBox(149.7076%, 6px);
   }
 
   &__info {

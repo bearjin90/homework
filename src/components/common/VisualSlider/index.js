@@ -16,12 +16,14 @@ const VisualSlider = () => {
         {visualData.map((elm, idx) => {
           return (
             <SwiperSlide key={elm.title + idx}>
-              <img className="visual-slider__img" src={require(`../../../assets/images/banner/${elm.img}`).default} alt={elm.title} />
-              <p className="visual-slider__category">{elm.category}</p>
-              <div className="visual-slider__info">
-                <p className="visual-slider__title">{elm.title}</p>
-                <p className="visual-slider__txt">{elm.txt}</p>
-              </div>
+              <a href="#" className="visual-slider__link">
+                <img className="visual-slider__img" src={require(`../../../assets/images/banner/${elm.img}`).default} alt={elm.title} />
+                <p className="visual-slider__category">{elm.category}</p>
+                <div className="visual-slider__info">
+                  <p className="visual-slider__title">{elm.title}</p>
+                  <p className="visual-slider__txt">{elm.txt}</p>
+                </div>
+              </a>
             </SwiperSlide>
           );
         })}

@@ -10,7 +10,9 @@ const CoordiThumbList = () => {
           return (
             <li key={elm.brand + idx} className="coordi-thumb-list__item">
               <div className="coordi-thumb-list__thumb coordi-thumb-list__thumb--big">
-                <img src={require(`../../../../assets/images/coordi/thumb/b_thumb_${elm.img}`).default} alt={`${elm.brand}_코디_${idx}`} />
+                <a href="#" className="coordi-thumb-list__link">
+                  <img src={require(`../../../../assets/images/coordi/thumb/b_thumb_${elm.img}`).default} alt={`${elm.brand}_코디_${idx}`} />
+                </a>
               </div>
               <div className="coordi-thumb-list__product">
                 <div className="coordi-thumb-list__thumb coordi-thumb-list__thumb--small">

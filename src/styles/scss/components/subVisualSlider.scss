@@ -5,6 +5,11 @@
     margin-bottom: 0;
   }
 
+  &__link {
+    display: block;
+    position: relative;
+  }
+
   &__img {
     position: absolute;
     top: 0;

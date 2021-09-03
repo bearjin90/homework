@@ -12,8 +12,10 @@ const RankingList = ({ start, end }) => {
           return (
             <li key={`${elm.brand}_${elm.name}_${elm.ranking}`} className="ranking-list__item" data-ranking={elm.ranking}>
               <div className="ranking-list__img">
-                <img src={require(`../../../../assets/images/goods/${elm.img}`).default} alt={`${elm.brand}_${elm.name}`} />
-                <span className="ranking-list__ranking">{elm.ranking}</span>
+                <a href="#" className="ranking-list__link">
+                  <img src={require(`../../../../assets/images/goods/${elm.img}`).default} alt={`${elm.brand}_${elm.name}`} />
+                  <span className="ranking-list__ranking">{elm.ranking}</span>
+                </a>
               </div>
               <div className="ranking-list__info">
                 <p className="ranking-list__brand">{elm.brand}</p>

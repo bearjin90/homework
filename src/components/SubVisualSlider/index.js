@@ -17,8 +17,10 @@ const SubVisualSlider = ({ category }) => {
         {subVisualData[category].map((elm, idx) => {
           return (
             <SwiperSlide key={elm.title + idx} data-type={elm.type}>
-              <img className="sub-visual-slider__img" src={require(`../../assets/images/banner/${elm.img}`).default} alt={elm.title} />
-              <ProductInfo title={elm.title} txt={elm.txt} brand={elm.brand} comment={elm.comment} date={elm.date} />
+              <a href="#" className="sub-visual-slider__link">
+                <img className="sub-visual-slider__img" src={require(`../../assets/images/banner/${elm.img}`).default} alt={elm.title} />
+                <ProductInfo title={elm.title} txt={elm.txt} brand={elm.brand} comment={elm.comment} date={elm.date} />
+              </a>
             </SwiperSlide>
           );
         })}

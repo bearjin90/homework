@@ -8,7 +8,9 @@ const CoordiStyleList = ({ category }) => {
       return (
         <li key={`${elm.img}_${idx}`} className="coordi-style-list__item">
           <div className="coordi-style-list__img">
-            <img src={require(`../../../../assets/images/coordi/style/${elm.img}`).default} alt={`코디 스타일 이미지_${idx}`} />
+            <a href="#" className="coordi-style-list__link">
+              <img src={require(`../../../../assets/images/coordi/style/${elm.img}`).default} alt={`코디 스타일 이미지_${idx}`} />
+            </a>
           </div>
           {
             elm.play === 'Y' &&

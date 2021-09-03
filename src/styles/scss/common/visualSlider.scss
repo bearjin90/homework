@@ -1,4 +1,8 @@
 .visual-slider {
+  &__link {
+    display: block;
+    position: relative;
+  }
 
   &__category,
   &__info {

@@ -19,7 +19,9 @@ const UpdateProductContent = ({ category }) => {
     const lists = _newData.map((elm, idx) => {
       return (
         <li key={`${elm.img}_${idx}`} className="update-product-content__item">
-          <img src={require(`../../../../assets/images/update/product/${elm.img}`).default} alt={`상품 이미지_${idx}`} />
+          <a href="#" className="update-product-content__link">
+            <img src={require(`../../../../assets/images/update/product/${elm.img}`).default} alt={`상품 이미지_${idx}`} />
+          </a>
         </li>
       )
     });
