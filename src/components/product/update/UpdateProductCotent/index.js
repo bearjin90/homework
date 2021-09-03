@@ -14,7 +14,7 @@ const UpdateProductContent = ({ category }) => {
     const _dataLength = _newData.length;
 
     dataMax.current = _dataLength;
-    _dataLength > 7 ? _newData = _newData.slice(1, 8) : _newData;
+    _dataLength > 7 ? _newData = _newData.slice(0, 7) : _newData;
 
     const lists = _newData.map((elm, idx) => {
       return (
