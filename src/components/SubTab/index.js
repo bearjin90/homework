@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import subTabData from '../../_data/subTabData';
 
-const SubTab = ({ category }) => {
+const SubTab = ({ category, activeTab }) => {
   const onClickTab = useCallback((e) => {
     const target = e.target;
     const targetParent = e.target.parentNode;
@@ -18,7 +18,7 @@ const SubTab = ({ category }) => {
       {
         subTabData[category].map((elm, idx) => {
           return (
-            <button key={elm + idx} type="button" role="tab" data-id={idx} className={`sub-tab__btn ${idx === 0 ? "sub-tab__btn--active" : ''}`} onClick={onClickTab}>{elm}</button>
+            <button key={elm + idx} type="button" role="tab" data-id={idx} className={`sub-tab__btn ${activeTab === idx ? "sub-tab__btn--active" : ''}`} onClick={onClickTab}>{elm}</button>
           );
         })
       }
