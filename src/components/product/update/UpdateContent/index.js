@@ -15,11 +15,22 @@ const UpdateContent = () => {
         <RefreshButton text={'새로운  추천'} />
       </ButtonWrap>
       <UpdateTitle />
-      <SubTab category={'update'} />
+      <SubTab category={'update'} activeTab={0} />
       <UpdateProductContent category={'product1'} />
       <UpdateProductContent category={'product2'} />
-      <SubVisualSlider category={'ranking'} />
       <UpdateProductContent category={'product3'} />
+      <SubVisualSlider category={'ranking'} />
+      <UpdateProductContent category={'product4'} />
+      <UpdateProductContent category={'product5'} />
+      <UpdateProductContent category={'product6'} />
+      <UpdateProductContent category={'product7'} />
+      <UpdateProductContent category={'product8'} />
+      <SubTab category={'update'} activeTab={1} />
+      <UpdateProductContent category={'product4'} />
+      <UpdateProductContent category={'product5'} />
+      <UpdateProductContent category={'product6'} />
+      <UpdateProductContent category={'product7'} />
+      <UpdateProductContent category={'product8'} />
     </section>
   );
 };

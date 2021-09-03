@@ -19,7 +19,7 @@ const CoordiStyleList = ({ category }) => {
         </li>
       )
     })
-    coordiStyleData[category].smallItem === 'Y' && list.splice(5, 0, <SmallListItem key={`${category}_small-list`} category={category} />);
+    coordiStyleData[category].subData.length > 0 && list.splice(5, 0, <SmallListItem key={`${category}_small-list`} data={coordiStyleData[category].subData} />);
     return list;
   }, []);
 

@@ -1,13 +1,14 @@
 import React from 'react';
 
-const ProductInfo = ({ title, txt, brand, comment, date, time, showCase }) => {
+const ProductInfo = ({ title, txt, brand, comment, date, time, showCase, refresh }) => {
   return (
     <div className="product-info">
       {title && <p className="product-info__title">{title}</p>}
       {txt && <p className="product-info__txt">{txt}</p>}
       <div className="product-info__detail">
         {brand && <span className="product-info__brand">{brand}</span>}
-        {time && <span className="product-info__time">{time}분전</span>}
+        {time > 0 && <span className="product-info__time">{time}분전</span>}
+        {refresh > 0 && <span className="product-info__refresh">{refresh}분 전 갱신</span>}
         {comment > 0 && <span className="product-info__comment">{comment}개 댓글</span>}
         {
           date &&

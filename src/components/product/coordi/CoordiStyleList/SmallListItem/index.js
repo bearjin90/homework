@@ -1,11 +1,10 @@
 import React from 'react';
-import coordiStyleSubData from '../../../../../_data/coordiStyleSubData';
 
-const SmallListItem = ({ category }) => {
+const SmallListItem = ({ data }) => {
   return (
     <li className="coordi-style-list__item coordi-style-list__item--small">
       {
-        coordiStyleSubData[category].map((elm, idx) => {
+        data.map((elm, idx) => {
           return (
             <div key={`small-item_${elm.img}_${idx}`} className="coordi-style-list__small-item">
               <div className="coordi-style-list__img">

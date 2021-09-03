@@ -9,16 +9,16 @@ import CoordiStyleList from '../CoordiStyleList';
 const CoordiContent = () => {
   return (
     <section className="coordi-content">
-      <SubTab category={'coordi'} />
+      <SubTab category={'coordi'} activeTab={0} />
       <CoordiThumbList />
       <ButtonWrap>
         <ArrowButton text={'전체 보기'} />
       </ButtonWrap>
       <SubVisualSlider category={'coordi'} />
-      <SubTab category={'coordi2'} />
+      <SubTab category={'coordi2'} activeTab={0} />
       <CoordiStyleList category={'sportAndOutdoor'} />
       <SubVisualSlider category={'coordi'} />
-      <SubTab category={'coordi2'} />
+      <SubTab category={'coordi2'} activeTab={1} />
       <CoordiStyleList category={'formalAndUrban'} />
       <SubVisualSlider category={'coordi'} />
     </section>
