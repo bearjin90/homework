@@ -8,7 +8,7 @@ const Header = () => {
           <span className="blind">알림</span>
         </button>
       </div>
-      <h1 className="header__logo"><a href="/" className="header__logo-link">MUSINSA</a></h1>
+      <h1 className="header__logo"><a href="#" className="header__logo-link">MUSINSA</a></h1>
       <div className="header__right">
         <button type="button" className="icon-svg icon-svg--heart">
           <span className="blind">좋아요</span>

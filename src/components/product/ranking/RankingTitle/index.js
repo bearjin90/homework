@@ -5,7 +5,7 @@ const RankingTitle = () => {
     <div className="ranking-title">
       <div className="ranking-title__left">
         <h3 className="ranking-title__title">상품랭킹</h3>
-        <a className="ranking-title__link">전체</a>
+        <a href="#" className="ranking-title__link">전체</a>
       </div>
       <div className="ranking-title__right">
         <button type="button" className="ranking-title__all-age-btn">
