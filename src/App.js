@@ -3,6 +3,7 @@ import './styles/scss/app.scss';
 import Header from './components/common/Header';
 import VisualSlider from './components/common/VisualSlider';
 import ProductContent from './components/product/ProductContent';
+import ScrollTopBtn from './components/common/ScrollTopBtn';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <VisualSlider />
       <ProductContent />
+      <ScrollTopBtn />
     </main>
   );
 };
