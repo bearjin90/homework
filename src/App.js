@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/scss/app.scss';
+import './styles/scss/App.scss';
 import Header from './components/common/Header';
 import VisualSlider from './components/common/VisualSlider';
 import ProductContent from './components/product/ProductContent';
